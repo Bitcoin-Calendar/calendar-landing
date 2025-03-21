@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://bitcoin-calendar.org/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://bitcoin-calendar.org/</loc>
   </url><url>
-    <loc>http://localhost:1313/events/</loc>
+    <loc>https://bitcoin-calendar.org/events/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://bitcoin-calendar.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/roadmap/</loc>
+    <loc>https://bitcoin-calendar.org/roadmap/</loc>
   </url><url>
-    <loc>http://localhost:1313/support/</loc>
+    <loc>https://bitcoin-calendar.org/support/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://bitcoin-calendar.org/tags/</loc>
   </url>
 </urlset>
