@@ -1,0 +1,96 @@
+<div class="nostr-widget-container">
+  <h3 class="widget-loading">Loading latest Nostr posts...</h3>
+  <div id="nostr-profile-widget"></div>
+</div>
+
+<style>
+.nostr-widget-container {
+  margin: 2rem 0;
+}
+
+.widget-loading {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 2rem 0;
+}
+
+/* Additional styling for the embedded widget */
+:root {
+  --nostr-embed-border-radius: 8px;
+  --nostr-embed-primary-color: #ff9900;
+}
+
+.nostr-embed .ne-header {
+  margin-bottom: 1rem;
+}
+
+.nostr-embed .ne-card {
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nostr-embed .ne-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Fix potential theme conflicts */
+.nostr-embed a {
+  text-decoration: none;
+}
+
+.nostr-embed img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // The npub we want to display posts from
+  const npub = 'npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn';
+  
+  // Load the nostr-embed script
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.async = true;
+  script.src = 'https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@0.1.16/dist/nostr-embed.js';
+  
+  // Configuration options for the widget
+  const options = {
+    showZaps: true,
+    showCopyAddr: false,
+    hideNostrich: false,
+    showFollowing: false,
+    postsToShow: 2, // Show only the 2 most recent posts
+    theme: 'light', // Adjust based on your site's theme
+  };
+  
+  // Initialize the widget when the script loads
+  script.onload = function() {
+    // Hide the loading message
+    document.querySelector('.widget-loading').style.display = 'none';
+    
+    // Initialize the profile widget
+    window.nostrEmbed.init(
+      npub, // The npub to fetch posts from
+      '#nostr-profile-widget', // The container element
+      'wss://relay.nostr.band', // Primary relay
+      options,
+      ['wss://nos.lol', 'wss://relay.damus.io'] // Fallback relays
+    );
+  };
+  
+  // Error handling
+  script.onerror = function() {
+    document.querySelector('.widget-loading').innerHTML = 
+      'Failed to load Nostr widget. <a href="https://snort.social/p/' + npub + '" target="_blank">View profile on Snort →</a>';
+  };
+  
+  // Add the script to the page
+  const firstScript = document.getElementsByTagName('script')[0];
+  firstScript.parentNode.insertBefore(script, firstScript);
+});
+</script> 

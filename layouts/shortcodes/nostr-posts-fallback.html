@@ -1,0 +1,105 @@
+<noscript>
+<div class="featured-events">
+    <div class="event-card">
+        <div class="event-date">
+            <span class="month">NOSTR</span>
+            <span class="day">POST</span>
+            <span class="year">2023</span>
+        </div>
+        <div class="event-details">
+            <p class="description">JavaScript is required to load the latest Nostr posts. Please enable JavaScript to see the latest updates.</p>
+            <p class="location">via Nostr</p>
+            <a href="https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn" class="event-link" target="_blank">View Profile →</a>
+        </div>
+    </div>
+</div>
+</noscript>
+
+<style>
+.featured-events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.event-card {
+    display: flex;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ff9900;
+    color: #000;
+    padding: 0.7rem;
+    min-width: 60px;
+    text-align: center;
+}
+
+.month, .day, .year {
+    display: block;
+    line-height: 1.2;
+}
+
+.month {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.day {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.year {
+    font-size: 0.8rem;
+}
+
+.event-details {
+    padding: 1rem;
+    flex: 1;
+}
+
+.location {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    color: var(--text-secondary);
+}
+
+.description {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.event-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff9900;
+}
+
+.event-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .featured-events {
+        grid-template-columns: 1fr;
+    }
+}
+</style> 

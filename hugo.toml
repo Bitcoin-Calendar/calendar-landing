@@ -1,0 +1,39 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Bitcoin Calendar'
+theme = "gokarna"
+
+# Site parameters
+[params]
+  description = "Archiving and relaying every Bitcoin milestone"
+  avatarURL = "https://i.nostr.build/mQqmb4iclGFrXjhT.png"
+  avatarSize = "size-m"
+  showBackToTopButton = true
+  
+  # Social media links
+  socialIcons = [
+    {name = "nostr", url = "https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn"},
+    {name = "github", url = "https://github.com/bitcoin21ideas/calendar-bot"},
+    {name = "email", url = "mailto:bitcoin-calendar@proton.me"},
+    {name = "bolt", url = "https://zapmeacoffee.com/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn"}
+  ]
+
+# Navigation menu
+[menu]
+  [[menu.main]]
+    name = "About"
+    pre = "<span data-feather='info'></span>"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Support"
+    pre = "<span data-feather='zap'></span>"
+    url = "/support/"
+    weight = 2
+    
+  [[menu.main]]
+    name = "Roadmap"
+    pre = "<span data-feather='map'></span>"
+    url = "/roadmap/"
+    weight = 3
