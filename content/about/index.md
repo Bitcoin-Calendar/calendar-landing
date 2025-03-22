@@ -6,9 +6,9 @@ type: "page"
 
 Bitcoin Calendar is an [open source](https://github.com/bitcoin21ideas/calendar-bot) Go-based application that tracks and posts historical Bitcoin events daily to Nostr, ensuring key moments are never forgotten.
 
-![project structure](https://storage.googleapis.com/geyser-images-distribution-prod-us/3bce3e87-80d5-4d72-a7e8-4aeec7f4c1db_calendar-bot-flow/image_large.webp)
+![bot flow](/images/bot-flow.webp)
 
-> _While the project has reached its MVP stage, there are numerous improvements and new features on our_ [roadmap](/roadmap/)_. Please support Bitcoin Calendar to ensure future generations will have a verifiable way to study Bitcoin history._
+> _There are numerous improvements and new features on our_ [roadmap](/roadmap/)_. Please [support](/support/) Bitcoin Calendar to ensure future generations have an accessible and verifiable source documenting Bitcoin history._
 
 ## Condensed Roadmap
 

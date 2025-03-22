@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin Calendar"
-description: "Track Bitcoin events, conferences, and important dates"
+description: "An open source project archiving and relaying every Bitcoin milestone to Nostr"
 ---
   
 {{< br >}}
