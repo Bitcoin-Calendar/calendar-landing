@@ -10,14 +10,16 @@ If you find Bitcoin Calendar valuable, please consider supporting the project by
 - sending us bitcoin in any way, shape or form via [Coinos](https://coinos.io/bitcal)
 - zapping Bitcoin Calendar a coffee:
 
-[![⚡️zapmeacoffee](https://img.shields.io/badge/⚡️zap_-me_a_coffee-ff9500?style=plastic)](https://zapmeacoffee.com/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn)  
+{{< orange-button link="https://zapmeacoffee.com/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn" text="zap me a coffee" >}} 
 
-100% of donations go toward development and hosting costs.
+{{< br >}}
+
+_100% of donations go toward development and hosting costs._
 
 ## Contact Us
 
 For any other questions or support issues:
 
-- **Email**: [Send a mail to bitcoin-calendar](mailto:bitcoin-calendar@proton.me)
-- **Nostr**: [Reach out](https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn)
-- **GitHub Issues**: [Report a bug](https://github.com/Bitcoin-Calendar/calendar-bot/issues) 
+- [Reach out on Nostr](https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn)
+- [Report a bug on GitHub](https://github.com/Bitcoin-Calendar/calendar-bot/issues) 
+- [Send an email](mailto:bitcoin-calendar@proton.me)

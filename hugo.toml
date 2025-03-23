@@ -14,7 +14,7 @@ theme = "gokarna"
   socialIcons = [
     {name = "github", url = "https://github.com/bitcoin21ideas/calendar-bot"},
     {name = "email", url = "mailto:bitcoin-calendar@proton.me"},
-    {name = "bolt", url = "https://zapmeacoffee.com/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn"}
+  #  {name = "bolt", url = "https://zapmeacoffee.com/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn"}
   ]
 
 # Navigation menu

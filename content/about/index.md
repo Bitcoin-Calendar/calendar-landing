@@ -12,22 +12,23 @@ Bitcoin Calendar is an [open source](https://github.com/bitcoin21ideas/calendar-
 
 ## Condensed Roadmap
 
-*   **Q2 2025:** Expand to 500+ historical events in English, enhance content with media files, implement monitoring systems, and add Telegram integration.
+*   **Q2 2025:** Expand to __500+ historical events__ in English, enhance content with media files, implement monitoring systems, and add __Telegram__ integration.
     
-*   **Q3 2025:** Launch Spanish language support, develop interactive website with search and filtering capabilities.
+*   **Q3 2025:** Launch __Spanish__ language support, develop interactive __website__ with search and filtering capabilities.
     
-*   **Q4 2025:** Release public API for developers, implement submission system for community contributions.
+*   **Q4 2025:** Release public __API__ for developers, implement submission system for community contributions.
     
-*   **Q1-Q2 2026:** Create mobile-friendly experience, implement Nostr login, and develop educational learning paths.
+*   **Q1-Q2 2026:** Create mobile-friendly experience, implement __Nostr__ login, and develop educational learning paths.
     
 ## Follow on Nostr
 
-The project currently supports English and Russian versions with dedicated nostr accounts:
+The project currently supports __English__ and __Russian__ versions with dedicated nostr accounts:
 
-*   **_EN:_** [njump.me](https://njump.me/npub174ym879uduptvedpjks0mcqurzdne5h2n4g6l7k6ej2dv7nc590qgync84)
-    
-*   **_RU:_** [njump.me](https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn)
-    
+{{< purple-button link="https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn" text="Bitcoin Calendar (EN)" >}}
+
+{{< br >}}
+
+{{< purple-button link="https://njump.me/npub174ym879uduptvedpjks0mcqurzdne5h2n4g6l7k6ej2dv7nc590qgync84" text="Биткоин календарь (RU)" >}}
 
 ## Extensive Documentation
 
@@ -35,11 +36,11 @@ Visit our GitHub repository to get more info, run the bot and suggest improvemen
 
 _Project documentation includes thorough information on:_
 
-*   [Project structure](https://github.com/bitcoin21ideas/calendar-bot/blob/main/docs/PROJECT_STRUCTURE.md)
+*   [Project structure](https://github.com/Bitcoin-Calendar/calendar-bot/blob/main/docs/PROJECT_STRUCTURE.md)
     
-*   [Ways to contribute](https://github.com/bitcoin21ideas/calendar-bot/blob/main/docs/CONTRIBUTING.md)
+*   [Ways to contribute](https://github.com/Bitcoin-Calendar/calendar-bot/blob/main/docs/CONTRIBUTING.md)
     
-*   [Developer docs](https://github.com/bitcoin21ideas/calendar-bot/blob/main/docs/DEVELOPMENT.md)
+*   [Developer docs](https://github.com/Bitcoin-Calendar/calendar-bot/blob/main/docs/DEVELOPMENT.md)
     
 
 ## Contact
