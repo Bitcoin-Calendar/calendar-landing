@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin Calendar"
-description: "An open source project archiving and relaying every Bitcoin milestone to Nostr"
+description: "The most extensive historical Bitcoin event archive relaying every Bitcoin milestone to Nostr"
 ---
 
 {{< purple-button link="https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn" text="Follow on Nostr" >}}

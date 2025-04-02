@@ -32,11 +32,10 @@ This page outlines the development roadmap for the Bitcoin Calendar project, org
   - Improve error handling and recovery mechanisms
   - Implement graceful degradation for relay issues
 
-### Platform Expansion
-- **Telegram Integration**
-  - Automate posting to Telegram channels
-  - Maintain consistent formatting between platforms
-  - Implement engagement tracking
+### Data Redundancy Improvements
+- **Deeper Nostr Integration**
+  - Spin up Haven relay
+  - Spin up Blossom Server
 
 ## Q3 2025 (July-September)
 
@@ -51,6 +50,11 @@ This page outlines the development roadmap for the Bitcoin Calendar project, org
   - Begin Spanish language support
   - Create thematic collections of related events
   - Develop "This Week in Bitcoin History" compilations and weekly statistics reports
+
+### Platform Expansion
+- **Telegram Integration**
+  - Automate posting to Telegram channels
+  - Maintain consistent formatting between platforms
 
 ## Q4 2025 (October-December)
 `Version: 2.0.0`

@@ -12,9 +12,9 @@ Bitcoin Calendar is an [open source](https://github.com/bitcoin21ideas/calendar-
 
 ## Condensed Roadmap
 
-*   **Q2 2025:** Expand to __500+ historical events__ in English, enhance content with media files, implement monitoring systems, and add __Telegram__ integration.
+*   **Q2 2025:** Expand to __500+ historical events__ in English, enhance every event with media files, implement monitoring systems, spin up __Nostr relay__ and __Blossom Server__.
     
-*   **Q3 2025:** Launch __Spanish__ language support, develop interactive __website__ with search and filtering capabilities.
+*   **Q3 2025:** Launch __Spanish__ language support, develop interactive __website__ with search and filtering capabilities and add __Telegram__ integration..
     
 *   **Q4 2025:** Release public __API__ for developers, implement submission system for community contributions.
     
