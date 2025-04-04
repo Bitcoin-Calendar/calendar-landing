@@ -1,0 +1,22 @@
+<div style="text-align: center;">
+    <a href="{{ .Get "link" }}" class="custom-button" style="background-color: #2DD4BF;">{{ .Get "text" }}</a>
+</div>
+
+<style>
+.custom-button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.1rem; /* Slightly larger text */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 18px; /* Slightly rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Plastic look */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.custom-button:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+    font-weight: bold; /* Make text bold on hover */
+    color: white; /* Keep text color white on hover */
+}
+</style>
