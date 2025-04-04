@@ -6,7 +6,7 @@ type: "page"
 
 If you find Bitcoin Calendar valuable, please consider supporting the project by:
 
-- visiting our Geyser page 
+- visiting our [Geyser page](https://geyser.fund/project/bitcoincalendar) 
 - sending us bitcoin in any way, shape or form via [Coinos](https://coinos.io/bitcal)
 - zapping Bitcoin Calendar a coffee:
 
