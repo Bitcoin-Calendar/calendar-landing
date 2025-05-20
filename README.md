@@ -10,5 +10,5 @@ Bitcoin Calendar is an open source Go-based application that tracks and posts hi
 
 ## Contact
 
-- Email: [bitcoin-calendar@proton.me(mailto:bitcoin-calendar@proton.me)]
+- Email: [bitcoin-calendar@proton.me](mailto:bitcoin-calendar@proton.me)
 - Nostr: [njump.me](https://njump.me/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn) 
