@@ -51,11 +51,6 @@ This page outlines the development roadmap for the Bitcoin Calendar project, org
   - Create thematic collections of related events
   - Develop "This Week in Bitcoin History" compilations and weekly statistics reports
 
-### Platform Expansion
-- **Telegram Integration**
-  - Automate posting to Telegram channels
-  - Maintain consistent formatting between platforms
-
 ## Q4 2025 (October-December)
 `Version: 2.0.0`
 
@@ -103,6 +98,11 @@ This page outlines the development roadmap for the Bitcoin Calendar project, org
   - Create contributor recognition system
 
 ## Long-term Vision
+
+### Bitcoin Archive
+- **Ensuring no Bitcoin event is lost**
+  - Setup ArchiveBox to locally host all the web pages and documents Bitcoin Calendar refers to
+  - Integrate archived pages across the Bitcoin Calendar ecosystem – the bot, the website - to ensure the project does not have to rely on any third-party services 
 
 ### Educational Resources
 - **Learning Paths**
