@@ -6,7 +6,7 @@ theme = "gokarna"
 # Site parameters
 [params]
   description = "Archiving and relaying every Bitcoin milestone"
-  avatarURL = "/images/bitcal-logo.png"
+  avatarURL = "/images/logo-flat.png"
   avatarSize = "size-s"
   showBackToTopButton = true
   

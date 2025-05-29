@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Roadmap">
     <meta property="og:description" content="Future plans and upcoming features for Bitcoin Calendar">
-    <meta property="og:image" content="http://localhost:1313/images/bitcal-logo.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/bitcal-logo.png">
+    <meta property="og:image" content="http://localhost:1313/images/logo-flat.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/logo-flat.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Roadmap">
     <meta name="twitter:description" content="Future plans and upcoming features for Bitcoin Calendar">
     <meta property="twitter:domain" content="http://localhost:1313/roadmap/">
     <meta property="twitter:url" content="http://localhost:1313/roadmap/">
-    <meta name="twitter:image" content="http://localhost:1313/images/bitcal-logo.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/logo-flat.png">
 
     
     <link rel="canonical" href="http://localhost:1313/roadmap/">
@@ -64,7 +64,7 @@
         
         <div class="avatar">
             <a href="http://localhost:1313/">
-                <img src='/images/bitcal-logo.png' alt="avatar">
+                <img src='/images/logo-flat.png' alt="avatar">
             </a>
         </div>
         
@@ -140,43 +140,73 @@
 
     <div class="post-content">
         <p>This page outlines the development roadmap for the Bitcoin Calendar project, organized by quarter with specific goals and milestones.</p>
+<p><img src="https://haven.bitcoin-calendar.org/3feca195e808558617e7d3a6dbaf4f42b0ded77dc1ead229feb3fb097d79e049.webp" alt="project-architecture"></p>
 <h2 id="q2-2025-april-june">Q2 2025 (April-June)</h2>
-<p><code>Version: 1.1.0</code></p>
-<h3 id="database-enhancement">Database Enhancement</h3>
+<p><code>Version 1.0.0</code></p>
+<h3 id="core-data--content-enhancement">Core Data &amp; Content Enhancement</h3>
 <ul>
-<li>
-<p><strong>English Event Population</strong></p>
+<li><strong>English Event Population</strong>
 <ul>
-<li>Target: Expand from current March &amp; April events to 500+ events across the year (prepare English version based on the extensive Russian version)</li>
+<li>Target: Expand to 500+ historical events in English</li>
 <li>Add missing historical milestones</li>
 <li>Standardize formatting and citation requirements</li>
 </ul>
 </li>
-<li>
-<p><strong>Content Quality Improvements</strong></p>
+<li><strong>Content Quality Improvements</strong>
 <ul>
 <li>Add media files for all events (images, charts)</li>
 <li>Include additional backup archive links to prevent link rot</li>
 <li>Implement consistent formatting standards</li>
 </ul>
 </li>
-</ul>
-<h3 id="infrastructure-improvements">Infrastructure Improvements</h3>
+<li><strong>SQLite Database Migration</strong>
 <ul>
+<li><input checked="" disabled="" type="checkbox"> Migrate event data from CSV files to an SQLite database</li>
+<li><input checked="" disabled="" type="checkbox"> Update bot and API to use SQLite as the primary data source</li>
+<li><input checked="" disabled="" type="checkbox"> Define database schema and data integrity rules</li>
+<li><input checked="" disabled="" type="checkbox"> Implement API support for SQLite</li>
+</ul>
+</li>
+</ul>
+<h3 id="api-development">API Development</h3>
+<ul>
+<li><strong>Public API</strong>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Create RESTful API for accessing events from SQLite DB</li>
+<li><input checked="" disabled="" type="checkbox"> Implement rate limiting and authentication</li>
+<li><input checked="" disabled="" type="checkbox"> Develop comprehensive API documentation</li>
+</ul>
+</li>
+<li><strong>Integration Options</strong>
+<ul>
+<li>Implement webhooks for event notifications</li>
+<li>Develop widgets for embedding calendar events</li>
+<li>Create RSS feeds for various categories</li>
+</ul>
+</li>
+</ul>
+<h3 id="infrastructure--archiving">Infrastructure &amp; Archiving</h3>
+<ul>
+<li>
+<p><strong>ArchiveBox Setup</strong></p>
+<ul>
+<li>Setup ArchiveBox to locally host all the web pages and documents Bitcoin Calendar refers to</li>
+<li>Plan integration of archived links into event data (via SQLite DB)</li>
+</ul>
+</li>
 <li>
 <p><strong>Monitoring and Alerting</strong></p>
 <ul>
 <li>Implement health check system</li>
 <li>Set up automated alerts for failed posts</li>
-<li>Create status dashboard for internal use</li>
 </ul>
 </li>
 <li>
-<p><strong>Reliability Enhancements</strong></p>
+<p><strong>Dockerization of Calendar Bot</strong></p>
 <ul>
-<li>Add automated testing suite</li>
-<li>Improve error handling and recovery mechanisms</li>
-<li>Implement graceful degradation for relay issues</li>
+<li><input checked="" disabled="" type="checkbox"> Create Dockerfile for the Go application</li>
+<li><input checked="" disabled="" type="checkbox"> Implement Docker Compose setup for easy deployment and management (production and test instances)</li>
+<li><input checked="" disabled="" type="checkbox"> Updated documentation for Docker-based setup</li>
 </ul>
 </li>
 </ul>
@@ -184,37 +214,26 @@
 <ul>
 <li><strong>Deeper Nostr Integration</strong>
 <ul>
-<li>Spin up Haven relay</li>
-<li>Spin up Blossom Server</li>
+<li><input checked="" disabled="" type="checkbox"> Spin up Haven relay</li>
+<li><input checked="" disabled="" type="checkbox"> Spin up Blossom Server</li>
 </ul>
 </li>
 </ul>
 <h2 id="q3-2025-july-september">Q3 2025 (July-September)</h2>
-<p><code>Version: 1.2.0</code></p>
 <h3 id="content-enhancement">Content Enhancement</h3>
 <ul>
 <li>
 <p><strong>Metadata Optimization</strong></p>
 <ul>
-<li>Implement consistent hashtag strategy</li>
+<li>Implement consistent tagging strategy</li>
 <li>Create event categories and tagging system</li>
 </ul>
 </li>
 <li>
 <p><strong>Content Expansion</strong></p>
 <ul>
-<li>Begin Spanish language support</li>
 <li>Create thematic collections of related events</li>
 <li>Develop &ldquo;This Week in Bitcoin History&rdquo; compilations and weekly statistics reports</li>
-</ul>
-</li>
-</ul>
-<h3 id="platform-expansion">Platform Expansion</h3>
-<ul>
-<li><strong>Telegram Integration</strong>
-<ul>
-<li>Automate posting to Telegram channels</li>
-<li>Maintain consistent formatting between platforms</li>
 </ul>
 </li>
 </ul>
@@ -230,60 +249,60 @@
 </ul>
 </li>
 </ul>
-<h3 id="api-development">API Development</h3>
+<h2 id="q4-2025-october-december-1">Q4 2025 (October-December)</h2>
+<p><code>Version: 2.0.0</code></p>
+<h3 id="api--community">API &amp; Community</h3>
 <ul>
-<li>
-<p><strong>Public API</strong></p>
+<li><strong>Public API</strong>
 <ul>
-<li>Create RESTful API for accessing events</li>
-<li>Implement rate limiting and authentication</li>
-<li>Develop comprehensive API documentation</li>
+<li>Release public API for developers</li>
 </ul>
 </li>
-<li>
-<p><strong>Integration Options</strong></p>
+<li><strong>Contribution System</strong>
 <ul>
-<li>Implement webhooks for event notifications</li>
-<li>Develop widgets for embedding calendar events</li>
-<li>Create RSS feeds for various categories</li>
+<li>Implement submission system for community contributions</li>
 </ul>
 </li>
 </ul>
-<h2 id="q1-2026-january-march">Q1 2026 (January-March)</h2>
-<p><code>Version: 2.1.0</code></p>
-<h3 id="mobile-experience">Mobile Experience</h3>
+<h3 id="chatbot-development">Chatbot Development</h3>
 <ul>
-<li><strong>Progressive Web App</strong>
+<li><strong>MCP Server &amp; Initial Chatbot</strong>
 <ul>
-<li>Develop PWA for mobile access</li>
-<li>Implement offline functionality</li>
-<li>Create notification system for upcoming events</li>
-<li>Implement timeline visualization</li>
+<li>Set up MCP server</li>
+<li>Start working on a Bitcoin history oriented chatbot implementation (relying on DVMCP for Nostr integration)</li>
 </ul>
 </li>
 </ul>
-<h2 id="q2-2026-april-june">Q2 2026 (April-June)</h2>
-<p><code>Version: 2.2.0</code></p>
-<h3 id="community-features">Community Features</h3>
+<h2 id="q1-q2-2026-january-june">Q1-Q2 2026 (January-June)</h2>
+<h3 id="mobile--advanced-features">Mobile &amp; Advanced Features</h3>
 <ul>
-<li>
-<p><strong>User Accounts</strong></p>
+<li><strong>Mobile-Friendly Experience</strong>
 <ul>
-<li>Implement Nostr login for personalized experience</li>
-<li>Create user profiles with contribution history</li>
-<li>Develop preferences and notification settings</li>
+<li>Create mobile-friendly experience (e.g., Progressive Web App)</li>
 </ul>
 </li>
-<li>
-<p><strong>Contribution System</strong></p>
+<li><strong>Nostr Login</strong>
 <ul>
-<li>Add event submission portal</li>
-<li>Implement community voting on submissions</li>
-<li>Create contributor recognition system</li>
+<li>Implement Nostr login</li>
+</ul>
+</li>
+<li><strong>Chatbot Enhancements</strong>
+<ul>
+<li>Develop LLM based chatbot</li>
+<li>Create Nostr Historian bot</li>
 </ul>
 </li>
 </ul>
 <h2 id="long-term-vision">Long-term Vision</h2>
+<h3 id="bitcoin-archive">Bitcoin Archive</h3>
+<ul>
+<li><strong>Ensuring no Bitcoin event is lost</strong>
+<ul>
+<li>Setup ArchiveBox to locally host all the web pages and documents Bitcoin Calendar refers to</li>
+<li>Integrate archived pages across the Bitcoin Calendar ecosystem – the bot, the website - to ensure the project does not have to rely on any third-party services</li>
+</ul>
+</li>
+</ul>
 <h3 id="educational-resources">Educational Resources</h3>
 <ul>
 <li><strong>Learning Paths</strong>

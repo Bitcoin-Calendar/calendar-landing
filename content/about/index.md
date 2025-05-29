@@ -4,21 +4,18 @@ description: "Learn about the Bitcoin Calendar project, our mission, and the tea
 type: "page"
 ---
 
-Bitcoin Calendar is an [open source](https://github.com/bitcoin21ideas/calendar-bot) Go-based application that tracks and posts historical Bitcoin events daily to Nostr, ensuring key moments are never forgotten.
+Bitcoin Calendar is an [open source](https://github.com/Bitcoin-Calendar) project consisting of multiple mini apps, that ensure that hundreds of Bitcoin historical events, related media and reference web pages are properly stored and archived and the events themselves are regularly posted to Nostr and displayed on a dedicated website. Bitcoin Calendar ensures that key moments are never forgotten.
 
-![bot flow](/images/bot-flow.webp)
+![structure](/images/structure.webp)
 
 > _There are numerous improvements and new features on our_ [roadmap](/roadmap/)_. Please [support](/support/) Bitcoin Calendar to ensure future generations have an accessible and verifiable source documenting Bitcoin history._
 
 ## Condensed Roadmap
 
-*   **Q2 2025:** Expand to __500+ historical events__ in English, enhance every event with media files, implement monitoring systems, spin up __Nostr relay__ and __Blossom Server__.
-    
-*   **Q3 2025:** Launch __Spanish__ language support, develop interactive __website__ with search and filtering capabilities and add __Telegram__ integration..
-    
-*   **Q4 2025:** Release public __API__ for developers, implement submission system for community contributions.
-    
-*   **Q1-Q2 2026:** Create mobile-friendly experience, implement __Nostr__ login, and develop educational learning paths.
+- Q2 2025: Expand to 500+ historical events in English, enhance content with media files, set up API support and self-hosted web archive as well as spin up own Nostr relay and Blossom Server.
+- Q3 2025: Develop interactive website with search and filtering capabilities.
+- Q4 2025: Release public API for developers, implement submission system for community contributions. Set up MCP server and start working on a Bitcoin history oriented chatbot implementation (relying on DVMCP for Nostr integration).
+- Q1-Q2 2026: Create mobile-friendly experience, implement Nostr login, and LLM based chatbot as well as Nostr Historian bot.
     
 ## Follow on Nostr
 

@@ -14,5 +14,5 @@ description: "The most extensive historical Bitcoin event archive relaying every
 {{< orange-button link="https://zapmeacoffee.com/npub1tcalvjvswjh5rwhr3gywmfjzghthexjpddzvlxre9wxfqz4euqys0309hn" text="Zap me a coffee" >}}
 
 {{< center >}}
-Bitcoin Calendar is an open project that tracks and posts historical Bitcoin events daily to Nostr, ensuring key moments are never forgotten.
+The goal of the Bitcoin Calendar project is to become a FOSS, self sovereign app with minimal to no dependency on third-party services – from storing historical events to launching a website to display them.
 {{< /center >}}

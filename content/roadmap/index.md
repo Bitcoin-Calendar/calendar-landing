@@ -6,48 +6,63 @@ type: "page"
 
 This page outlines the development roadmap for the Bitcoin Calendar project, organized by quarter with specific goals and milestones.
 
+![project-architecture](https://haven.bitcoin-calendar.org/3feca195e808558617e7d3a6dbaf4f42b0ded77dc1ead229feb3fb097d79e049.webp)
+
 ## Q2 2025 (April-June)
 
-`Version: 1.1.0`
+`Version 1.0.0`
 
-### Database Enhancement
+### Core Data & Content Enhancement
 - **English Event Population**
-  - Target: Expand from current March & April events to 500+ events across the year (prepare English version based on the extensive Russian version)
+  - Target: Expand to 500+ historical events in English
   - Add missing historical milestones
   - Standardize formatting and citation requirements
-
 - **Content Quality Improvements**
   - Add media files for all events (images, charts)
   - Include additional backup archive links to prevent link rot
   - Implement consistent formatting standards
+- **SQLite Database Migration**
+  - [x] Migrate event data from CSV files to an SQLite database
+  - [x] Update bot and API to use SQLite as the primary data source
+  - [x] Define database schema and data integrity rules
+  - [x] Implement API support for SQLite
 
-### Infrastructure Improvements
+### API Development
+- **Public API**
+  - [x] Create RESTful API for accessing events from SQLite DB
+  - [x] Implement rate limiting and authentication
+  - [x] Develop comprehensive API documentation
+- **Integration Options**
+  - Implement webhooks for event notifications
+  - Develop widgets for embedding calendar events
+  - Create RSS feeds for various categories
+
+### Infrastructure & Archiving
+- **ArchiveBox Setup**
+  - Setup ArchiveBox to locally host all the web pages and documents Bitcoin Calendar refers to
+  - Plan integration of archived links into event data (via SQLite DB)
 - **Monitoring and Alerting**
   - Implement health check system
   - Set up automated alerts for failed posts
-  - Create status dashboard for internal use
 
-- **Reliability Enhancements**
-  - Add automated testing suite
-  - Improve error handling and recovery mechanisms
-  - Implement graceful degradation for relay issues
+- **Dockerization of Calendar Bot**
+  - [x] Create Dockerfile for the Go application
+  - [x] Implement Docker Compose setup for easy deployment and management (production and test instances)
+  - [x] Updated documentation for Docker-based setup
 
 ### Data Redundancy Improvements
 - **Deeper Nostr Integration**
-  - Spin up Haven relay
-  - Spin up Blossom Server
+  - [x] Spin up Haven relay
+  - [x] Spin up Blossom Server
 
 ## Q3 2025 (July-September)
 
-`Version: 1.2.0`
-
 ### Content Enhancement
 - **Metadata Optimization**
-  - Implement consistent hashtag strategy
+  - Implement consistent tagging strategy
   - Create event categories and tagging system
 
 - **Content Expansion**
-  - Begin Spanish language support
   - Create thematic collections of related events
   - Develop "This Week in Bitcoin History" compilations and weekly statistics reports
 
@@ -60,42 +75,31 @@ This page outlines the development roadmap for the Bitcoin Calendar project, org
   - Create search functionality
   - Add filtering by categories, tags, and dates
 
-### API Development
+## Q4 2025 (October-December)
+
+`Version: 2.0.0`
+
+### API & Community
 - **Public API**
-  - Create RESTful API for accessing events
-  - Implement rate limiting and authentication
-  - Develop comprehensive API documentation
-
-- **Integration Options**
-  - Implement webhooks for event notifications
-  - Develop widgets for embedding calendar events
-  - Create RSS feeds for various categories
-
-## Q1 2026 (January-March)
-
-`Version: 2.1.0`
-
-### Mobile Experience
-- **Progressive Web App**
-  - Develop PWA for mobile access
-  - Implement offline functionality
-  - Create notification system for upcoming events
-  - Implement timeline visualization
-
-## Q2 2026 (April-June)
-
-`Version: 2.2.0`
-
-### Community Features
-- **User Accounts**
-  - Implement Nostr login for personalized experience
-  - Create user profiles with contribution history
-  - Develop preferences and notification settings
-
+  - Release public API for developers
 - **Contribution System**
-  - Add event submission portal
-  - Implement community voting on submissions
-  - Create contributor recognition system
+  - Implement submission system for community contributions
+
+### Chatbot Development
+- **MCP Server & Initial Chatbot**
+  - Set up MCP server
+  - Start working on a Bitcoin history oriented chatbot implementation (relying on DVMCP for Nostr integration)
+
+## Q1-Q2 2026 (January-June)
+
+### Mobile & Advanced Features
+- **Mobile-Friendly Experience**
+  - Create mobile-friendly experience (e.g., Progressive Web App)
+- **Nostr Login**
+  - Implement Nostr login
+- **Chatbot Enhancements**
+  - Develop LLM based chatbot
+  - Create Nostr Historian bot
 
 ## Long-term Vision
 
