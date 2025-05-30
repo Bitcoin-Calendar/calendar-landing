@@ -6,7 +6,7 @@ type: "page"
 
 Bitcoin Calendar is an [open source](https://github.com/Bitcoin-Calendar) project consisting of multiple mini apps, that ensure that hundreds of Bitcoin historical events, related media and reference web pages are properly stored and archived and the events themselves are regularly posted to Nostr and displayed on a dedicated website. Bitcoin Calendar ensures that key moments are never forgotten.
 
-![structure](/images/structure.webp)
+![structure](https://haven.bitcoin-calendar.org/4d4f81403e39c0c4a454a35cb6913a9420539c9665cb5240fdaff4e27b1e5176.webp)
 
 > _There are numerous improvements and new features on our_ [roadmap](/roadmap/)_. Please [support](/support/) Bitcoin Calendar to ensure future generations have an accessible and verifiable source documenting Bitcoin history._
 
@@ -29,7 +29,7 @@ The project currently supports __English__ and __Russian__ versions with dedicat
 
 ## Extensive Documentation
 
-Visit our GitHub repository to get more info, run the bot and suggest improvements: [https://github.com/bitcoin21ideas/calendar-bot](https://github.com/bitcoin21ideas/calendar-bot)
+Visit our GitHub organization to get more info, run the app and suggest improvements: [https://github.com/Bitcoin-Calendar](https://github.com/Bitcoin-Calendar)
 
 _Project documentation includes thorough information on:_
 
